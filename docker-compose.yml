@@ -1,0 +1,9 @@
+netatalk:
+    build: ./netatalk
+    volumes:
+        - /home/media:/data
+        - /home/media/timemachine:/timemachine
+    restart: always
+    net: host
+    ports:
+        - "548:548"
